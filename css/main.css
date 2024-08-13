@@ -364,7 +364,7 @@ footer{
     position: relative;
 }
 .lunch-img{
-    background-image: url(/img/omuraisu.webp);
+    background-image: url(img/omuraisu.webp);
     background-attachment: fixed;
     background-size: cover;
     width: 100%;
@@ -390,7 +390,7 @@ footer{
     position: relative;
 }
 .cafe-img{
-    background-image: url(/img/coffee2.webp);
+    background-image: url(img/coffee2.webp);
     background-attachment: fixed;
     background-size: cover;
     width: 100%;
@@ -412,7 +412,7 @@ footer{
     position: relative;
 }
 .dinner-img{
-    background-image: url(/img/steak.jpg);
+    background-image: url(img/steak.jpg);
     background-attachment: fixed;
     background-size: cover;
     background-position: bottom;
