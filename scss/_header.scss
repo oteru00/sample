@@ -63,10 +63,6 @@ header {
     @include sp {
         display: none;
     }
-
-    .contact-list {
-        display: none;
-    }
 }
 
 .header-nav-list {
@@ -98,6 +94,10 @@ header {
     width: 50%;
     height: clamp(50px, 16vw, 16vh); // 最小50px, 最大80px, 画面幅に応じて変化
     background-color: #ffebd9;
+}
+
+.contact-list {
+    display: none;
 }
 
 
