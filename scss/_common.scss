@@ -1,6 +1,18 @@
-body {
+@mixin sp {
+    @media(max-width: 769px) {
+        @content;
+    }
+}
+
+@mixin tab {
+    @media(max-width: 1100px) {
+        @content;
+    }
+}
+
+* {
     font-family: 'Noto Sans JP', 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, 'MS Ｐゴシック', 'MS PGothic', sans-serif;
-    font-size: 14px;
+    font-size: 1.7vh;
 }
 
 .wrapper {
@@ -15,11 +27,17 @@ body {
     padding: 0 2%;
 }
 
-p,li{
+p,
+li {
     line-height: 1.5;
 }
+
 .page-top-margin {
     margin-top: 100px;
+
+    @include sp {
+        margin-top: max(50px, 16vh);
+    }
 }
 
 .sec-title {
@@ -96,3 +114,83 @@ p,li{
         line-height: 50px;
     }
 }
+
+// 右側サイドバー
+.right-fixed-nav {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 80px;
+    height: 100vh;
+    z-index: 100;
+    background: rgba(254, 254, 254, 0.6);
+    -ms-writing-mode: tb-rl;
+    writing-mode: vertical-rl;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @include tab {
+        width: 50px;
+    }
+
+    @include sp {
+        display: none;
+    }
+
+    .cont01,
+    .cont02 {
+        margin-bottom: 40px;
+        position: relative;
+
+        &::after {
+            content: "";
+            display: block;
+            width: 22px;
+            height: 2px;
+            background: #afafaf;
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: -20px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        a {
+            line-height: 1.2;
+            color: #000;
+            font-weight: bold;
+        }
+    }
+
+    .cont03 {
+        margin-bottom: 40px;
+
+        a {
+            line-height: 1.2;
+            color: #000;
+            font-weight: bold;
+        }
+    }
+}
+
+.fade-up {
+    transform: translateY(20px);
+    opacity: 0;
+    transition: 1s;
+}
+
+    // animation: fade-up 1.5s forwards;
+
+    // @keyframes fadeUpAnime {
+    //     from {
+    //         opacity: 0;
+    //         transform: translateY(200px);
+    //     }
+
+    //     to {
+    //         opacity: 1;
+    //         transform: translateY(0);
+    //     }
+    // }

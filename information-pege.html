@@ -6,15 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SNS合同会社　SNSmark.com</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@3.0.2/destyle.css">
-    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
+    <link rel="stylesheet" href="css/index.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="js/main.js" defer></script>
 </head>
 
 <body>
     <header>
         <div class="wrapper">
             <h1 class="site-logo">
-                <a href="/index.html">
-                    <img src="/img/SNSmark-logo.png" alt="SNSmark.com">
+                <a href="index.html">
+                    <img src="img/SNSmark-logo.png" alt="SNSmark.com">
                 </a>
             </h1>
             <nav class="header-nav">
@@ -27,12 +31,34 @@
                     <li><a href="information-pege.html">会社概要</a></li>
                     <li><a href="faq-pege.html">FAQ</a></li>
                 </ul>
+                <ul class="contact-list">
+                    <li class="contact-list-item">
+                        <a href="#" class="contact-btn">
+                            <h4 class="contact-list-title">メールでお問い合わせ</h4>
+                            <p>24時間受付中</p>
+                            <img src="img/cont_mail_icon.png" alt="メール">
+                        </a>
+                    </li>
+                    <li class="contact-list-item">
+                        <a href="#" class="contact-btn">
+                            <h4 class="contact-list-title">オンラインで相談</h4>
+                            <p>LINEにて対応</p>
+                            <img src="img/cont_online_icon.png" alt="パソコン">
+                        </a>
+                    </li>
+                    <li class="contact-list-item">
+                        <a href="#" class="contact-btn">
+                            <h4 class="contact-list-title">料金表<br>お役立ち資料</h4>
+                            <img src="img/cont_download_icon.png" alt="ダウンロード">
+                        </a>
+                    </li>
+                </ul>
             </nav>
             <div class="header-right">
                 <div class="header-tel-btn">
-                    <img src="/img/icons8-着信音量-50.png" alt="電話">
+                    <img src="img/icons8-着信音量-50.png" alt="電話">
                 </div>
-                <div class="humbarger">
+                <div class="hamburger">
                     <span></span>
                     <span></span>
                     <span></span>
@@ -43,7 +69,7 @@
 
     <main>
         <div class="page-top-img page-top-margin">
-            <img src="/img/SNSmark-logo.png" alt="SNSmark.com">
+            <img src="img/SNSmark-logo.png" alt="SNSmark.com">
         </div>
         <div class="information-nav">
             <a href="#philosophy" class="information-nav-item">ミッション・経営理念・ビジョン・行動指針</a>

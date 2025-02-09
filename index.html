@@ -6,15 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SNS合同会社　SNSmark.com</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@3.0.2/destyle.css">
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
     <link rel="stylesheet" href="css/index.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="js/main.js" defer></script>
 </head>
 
 <body>
     <header>
         <div class="wrapper">
             <h1 class="site-logo">
-                <a href="/index.html">
-                    <img src="/img/SNSmark-logo.png" alt="SNSmark.com">
+                <a href="index.html">
+                    <img src="img/SNSmark-logo.png" alt="SNSmark.com">
                 </a>
             </h1>
             <nav class="header-nav">
@@ -27,12 +31,34 @@
                     <li><a href="information-pege.html">会社概要</a></li>
                     <li><a href="faq-pege.html">FAQ</a></li>
                 </ul>
+                <ul class="contact-list">
+                    <li class="contact-list-item">
+                        <a href="#" class="contact-btn">
+                            <h4 class="contact-list-title">メールでお問い合わせ</h4>
+                            <p>24時間受付中</p>
+                            <img src="img/cont_mail_icon.png" alt="メール">
+                        </a>
+                    </li>
+                    <li class="contact-list-item">
+                        <a href="#" class="contact-btn">
+                            <h4 class="contact-list-title">オンラインで相談</h4>
+                            <p>LINEにて対応</p>
+                            <img src="img/cont_online_icon.png" alt="パソコン">
+                        </a>
+                    </li>
+                    <li class="contact-list-item">
+                        <a href="#" class="contact-btn">
+                            <h4 class="contact-list-title">料金表<br>お役立ち資料</h4>
+                            <img src="img/cont_download_icon.png" alt="ダウンロード">
+                        </a>
+                    </li>
+                </ul>
             </nav>
             <div class="header-right">
                 <div class="header-tel-btn">
-                    <img src="/img/icons8-着信音量-50.png" alt="電話">
+                    <img src="img/icons8-着信音量-50.png" alt="電話">
                 </div>
-                <div class="humbarger">
+                <div class="hamburger">
                     <span></span>
                     <span></span>
                     <span></span>
@@ -75,8 +101,8 @@
             </div>
             <div class="about-content-bottom wrapper"></div>
         </section>
-        <section id="reason">
-            <div class="container reason-content-area">
+        <section id="toppage-reason">
+            <div class="container reason-content-area fade-up">
                 <div class="reason-content-left"></div>
                 <div class="reason-content-right">
                     <h2 class="sec-title">REASONS TO BE CHOSEN</h2>
@@ -88,12 +114,12 @@
                         <li>テキストテキストテキストテキスト</li>
                         <li>テキストテキストテキストテキスト</li>
                     </ol>
-                    <a href="#" class="more-btn">もっと見る</a>
+                    <a href="#reason" class="more-btn">もっと見る</a>
                 </div>
             </div>
         </section>
-        <section id="service">
-            <div class="container">
+        <section id="toppage-service">
+            <div class="container fade-up">
                 <h2 class="sec-title">SERVICE MENU</h2>
                 <h3 class="sec-title-ja">サービスメニュー</h3>
                 <div class="service-content">
@@ -145,7 +171,9 @@
                     </ul>
                 </div>
             </div>
-            <div class="container othermenu">
+        </section>
+        <section>
+            <div class="container othermenu fade-up">
                 <h2 class="sec-title">OTHER MENU</h2>
                 <h3 class="sec-title-ja">その他メニュー</h3>
                 <ul class="othermenu-list">
@@ -170,11 +198,11 @@
                         <div class="img-area"></div>
                     </li>
                 </ul>
-                <a href="#" class="more-btn">もっと見る</a>
+                <a href="#othermenu" class="more-btn">もっと見る</a>
             </div>
         </section>
         <section class="works-post">
-            <div class="container">
+            <div class="container fade-up">
                 <h2 class="sec-title">WORKS</h2>
                 <h3 class="sec-title-ja">事例</h3>
                 <ul class="works-list">
@@ -199,11 +227,11 @@
                         <p>テキストテキストテキストテキスト</p>
                     </li>
                 </ul>
-                <a href="#" class="more-btn">もっと見る</a>
+                <a href="works-pege.html" class="more-btn">もっと見る</a>
             </div>
         </section>
         <section id="client">
-            <div class="container">
+            <div class="container fade-up">
                 <h2 class="sec-title">CLIENT COMPANY</h2>
                 <h3 class="sec-title-ja">お取引き実績</h3>
                 <ul class="client-list-logo">
@@ -281,20 +309,20 @@
                         <a href="#" class="contact-btn">
                             <h4 class="contact-list-title">メールでお問い合わせ</h4>
                             <p>24時間受付中</p>
-                            <img src="/img/cont_mail_icon.png" alt="メール">
+                            <img src="img/cont_mail_icon.png" alt="メール">
                         </a>
                     </li>
                     <li class="contact-list-item">
                         <a href="#" class="contact-btn">
                             <h4 class="contact-list-title">オンラインで相談</h4>
                             <p>LINEにて対応</p>
-                            <img src="/img/cont_online_icon.png" alt="パソコン">
+                            <img src="img/cont_online_icon.png" alt="パソコン">
                         </a>
                     </li>
                     <li class="contact-list-item">
                         <a href="#" class="contact-btn">
                             <h4 class="contact-list-title">料金表<br>お役立ち資料</h4>
-                            <img src="/img/cont_download_icon.png" alt="ダウンロード">
+                            <img src="img/cont_download_icon.png" alt="ダウンロード">
                         </a>
                     </li>
                 </ul>
@@ -310,19 +338,19 @@
     <footer>
         <div class="container footer-contant">
             <div class="information">
-                <img src="/img/SNSmark.com-logo.png" alt="SNSmark.com" class="footer-logo">
+                <img src="img/SNSmark.com-logo.png" alt="SNSmark.com" class="footer-logo">
                 <p class="campany-name">ウィンナビ株式会社</p>
                 <p class="address">東京都中央区溱2-11-1シティタワー銀座東</p>
                 <p class="tel">050-1809-3183</p>
             </div>
             <div class="footer-nav">
                 <ul class="footer-nav-list01">
-                    <li><a href="#">TOP</a></li>
-                    <li><a href="#">選ばれる理由</a></li>
-                    <li><a href="#">制作事例</a></li>
+                    <li><a href="index.html">TOP</a></li>
+                    <li><a href="service-pege.html">選ばれる理由</a></li>
+                    <li><a href="works-pege.html">制作事例</a></li>
                 </ul>
                 <ul class="footer-nav-list02">
-                    <li><a href="#">サービスメニュー</a></li>
+                    <li><a href="service-pege.html">サービスメニュー</a></li>
                     <li><a href="#">SNS運用/マーケティング</a></li>
                     <li><a href="#">WEB広告/SNS広告</a></li>
                     <li><a href="#">ホームページ制作</a></li>
@@ -331,9 +359,9 @@
                     <li><a href="#">インフルエンサーマーケティング</a></li>
                 </ul>
                 <ul class="footer-nav-list03">
-                    <li><a href="#">マガジン</a></li>
-                    <li><a href="#">会社案内</a></li>
-                    <li><a href="#">FAQ</a></li>
+                    <li><a href="magazine-page.html">マガジン</a></li>
+                    <li><a href="information-pege.html">会社案内</a></li>
+                    <li><a href="faq-pege.html">FAQ</a></li>
                     <li><a href="#">お問い合わせ</a></li>
                 </ul>
             </div>
@@ -341,33 +369,33 @@
         <div class="container">
             <ul class="footer-sns-list">
                 <li>
-                    <a href="#">
-                        <img src="/img/icons8-インスタグラム-50.png" alt="インスタグラム">
+                    <a href="https://www.instagram.com/snsmark.com.official">
+                        <img src="img/icons8-インスタグラム-50.png" alt="インスタグラム">
                     </a>
                 </li>
                 <li>
-                    <a href="#">
-                        <img src="/img/icons8-ツイッターx-50.png" alt="X">
+                    <a href="https://x.com/snsmarkcom">
+                        <img src="img/icons8-ツイッターx-50.png" alt="X">
                     </a>
                 </li>
                 <li>
-                    <a href="#">
-                        <img src="/img/icons8-チクタク-50.png" alt="TIKTOK">
+                    <a href="https://www.tiktok.com/@snsmark.com">
+                        <img src="img/icons8-チクタク-50.png" alt="TIKTOK">
                     </a>
                 </li>
                 <li>
-                    <a href="#">
-                        <img src="/img/icons8-youtube-50.png" alt="youtube">
+                    <a href="https://www.youtube.com/@snsmarkcom">
+                        <img src="img/icons8-youtube-50.png" alt="youtube">
                     </a>
                 </li>
                 <li>
-                    <a href="#">
-                        <img src="/img/icons8-line-50.png" alt="LINE">
+                    <a href="https://lin.ee/EkuJu77">
+                        <img src="img/icons8-line-50.png" alt="LINE">
                     </a>
                 </li>
                 <li>
-                    <a href="#">
-                        <img src="/img/icons8-郵便物-50.png" alt="メール">
+                    <a href="https://lit.link/snsmarkcom">
+                        <img src="img/icons8-郵便物-50.png" alt="メール">
                     </a>
                 </li>
             </ul>

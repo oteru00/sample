@@ -19,8 +19,8 @@
     position: relative;
 
     @include sp {
-        height: 84vh;
-        margin-top: clamp(50px, 16vw, 16vh); // 最小50px, 最大80px, 画面幅に応じて変化
+        height: 84svh;
+        margin-top: min(50px, 16vh);
     }
 
     /*スクロールダウン全体の場所*/
@@ -174,8 +174,8 @@
     }
 }
 
-// 選ばれる理由
-#reason {
+// トップページ選ばれる理由
+#toppage-reason {
     padding: 50px 0;
     background-color: #ffebd9;
 
@@ -225,7 +225,7 @@
 }
 
 // サービスートップページ
-#service {
+#toppage-service {
     padding: 50px 0;
 }
 
@@ -469,65 +469,7 @@
     }
 }
 
-// 右側サイドバー
-.right-fixed-nav {
-    position: fixed;
-    right: 0;
-    top: 0;
-    width: 80px;
-    height: 100vh;
-    z-index: 8000;
-    background: rgba(254, 254, 254, 0.6);
-    -ms-writing-mode: tb-rl;
-    writing-mode: vertical-rl;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 
-    @include tab {
-        width: 50px;
-    }
-
-    @include sp {
-        display: none;
-    }
-
-    .cont01,
-    .cont02 {
-        margin-bottom: 40px;
-        position: relative;
-
-        &::after {
-            content: "";
-            display: block;
-            width: 22px;
-            height: 2px;
-            background: #afafaf;
-            position: absolute;
-            left: 0;
-            right: 0;
-            bottom: -20px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        a {
-            line-height: 1.2;
-            color: #000;
-            font-weight: bold;
-        }
-    }
-
-    .cont03 {
-        margin-bottom: 40px;
-
-        a {
-            line-height: 1.2;
-            color: #000;
-            font-weight: bold;
-        }
-    }
-}
 
 // 選ばれる理由
 .reason-title-area {
