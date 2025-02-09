@@ -20,7 +20,8 @@
 
     @include sp {
         height: 84svh;
-        margin-top: min(50px, 16vh);
+        margin-top: clamp(50px, 16vw, 16vh);
+        ;
     }
 
     /*スクロールダウン全体の場所*/
@@ -121,6 +122,10 @@
 // アバウト
 #about {
     margin-bottom: 50px;
+
+    .wrapper {
+        padding: 0 2%;
+    }
 
     .about-content-area {
         display: flex;
@@ -225,7 +230,7 @@
 }
 
 // サービスートップページ
-#toppage-service {
+.service {
     padding: 50px 0;
 }
 
@@ -278,6 +283,10 @@
             margin: 20px 0;
         }
     }
+}
+
+.othermenu {
+    margin-bottom: 50px;
 }
 
 .othermenu-list {
@@ -506,19 +515,40 @@
 .box-flex-area {
     display: flex;
 
+    @include sp {
+        flex-direction: column;
+    }
+
     &:last-child {
         margin-bottom: 200px;
+
+        @include sp {
+            margin-bottom: 50px;
+        }
     }
 
     .box-flex-left {
         width: 50%;
         padding: 0 20px;
+
+        @include sp {
+            width: 100%;
+            padding: 0;
+            margin-bottom: 50px;
+        }
     }
 
     .box-flex-right {
         width: 50%;
         padding: 0 20px;
         transform: translate(0, 20%);
+
+        @include sp {
+            width: 100%;
+            padding: 0;
+            transform: translate(0, 0);
+            margin-bottom: 50px;
+        }
     }
 
     .box-text {
@@ -538,6 +568,10 @@
         right: 0;
         bottom: 0px;
         transform: translate(0, 80%);
+
+        @include sp {
+            transform: translate(0, 0);
+        }
     }
 }
 
@@ -546,6 +580,10 @@
         right: 0;
         bottom: 0px;
         transform: translate(0, 50%);
+
+        @include sp {
+            transform: translate(0, 0);
+        }
     }
 }
 
@@ -553,9 +591,18 @@
     margin-top: 200px;
     margin-bottom: 50px;
 
+    @include sp {
+        margin-top: 0;
+        border-bottom: 3px solid #333;
+    }
+
     .box-number {
         left: 200px;
         bottom: 0px;
+
+        @include sp {
+            right: 0;
+        }
     }
 }
 
@@ -571,21 +618,53 @@
         right: 0;
         bottom: 0px;
         transform: translate(0, 50%);
+
+        @include sp {
+            transform: translate(0, 0);
+        }
     }
 }
 
+// お問い合わせ
 .contact {
     background-color: #ffebd9;
     padding: 50px 0;
 
     .contact-text {
         width: 100%;
-        font-size: 1.3rem;
+        font-size: 1.4rem;
         font-weight: bold;
         text-align: center;
         background-color: #D9D8D8;
         line-height: 4;
         margin-bottom: 50px;
+
+        @include sp {
+            line-height: 2;
+            padding: 20px;
+        }
+    }
+
+    .contact-list {
+        width: 100%;
+
+        @include sp {
+            flex-direction: column;
+
+            .contact-list-item {
+                width: 100%;
+                margin: 0 auto 30px;
+
+            }
+
+        }
+    }
+
+    @include sp {
+        .tel-area {
+            flex-direction: column;
+            align-items: center;
+        }
     }
 }
 

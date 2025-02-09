@@ -30,7 +30,6 @@ header {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 0;
 
         @include sp {
             align-items: flex-start;
@@ -61,6 +60,10 @@ header {
 
 .header-nav {
     @include sp {
+        display: none;
+    }
+
+    .contact-list {
         display: none;
     }
 }
@@ -96,9 +99,6 @@ header {
     background-color: #ffebd9;
 }
 
-.contact-list {
-    display: none;
-}
 
 
 @include sp {
@@ -107,13 +107,13 @@ header {
         width: 50%;
         height: clamp(50px, 16vw, 16vh); // 最小50px, 最大80px, 画面幅に応じて変化
         background-color: #333;
-        padding: 0 15% 0 15%;
+        padding: 0 15%;
         position: relative;
 
         span {
             display: block;
             content: "";
-            width: 100%;
+            width: 50%;
             height: 1px;
             background-color: #fff;
             text-align: center;
