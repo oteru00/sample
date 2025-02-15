@@ -16,7 +16,7 @@ header {
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 200;
+    z-index: 9000;
     background-color: #fff;
     box-shadow: 0 0 10px #333;
     font-size: 1rem;
@@ -109,6 +109,7 @@ header {
         background-color: #333;
         padding: 0 15%;
         position: relative;
+        z-index: 200;
 
         span {
             display: block;
@@ -133,41 +134,37 @@ header {
         }
     }
 
-    header.active {
-        position: relative;
+    .active {
 
-        .hamburger {
-            z-index: 150;
+        span {
 
-            span {
+            &:nth-child(1) {
+                top: 50%;
+                transform: rotate(45deg);
+            }
 
-                &:nth-child(1) {
-                    top: 50%;
-                    transform: rotate(45deg);
-                }
+            &:nth-child(2) {
+                display: none;
+            }
 
-                &:nth-child(2) {
-                    display: none;
-                }
-
-                &:nth-child(3) {
-                    top: 50%;
-                    transform: rotate(-45deg);
-                }
+            &:nth-child(3) {
+                top: 50%;
+                transform: rotate(-45deg);
             }
         }
 
+
         .header-nav {
-            position: absolute;
-            top: clamp(50px, 16vw, 16vh);
+            position: fixed;
             display: block;
+            top: clamp(50px, 16vw, 16vh);
             width: 100%;
-            height: auto;
-            z-index: 150;
+            height: 100%;
+            z-index: 8999;
             background: rgba(0, 0, 0, 0.8);
-            overflow: scroll;
             overflow-y: auto;
             font-weight: bold;
+            padding-bottom: 50px;
 
             .header-nav-list {
                 flex-direction: column;

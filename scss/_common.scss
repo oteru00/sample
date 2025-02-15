@@ -12,7 +12,7 @@
 
 * {
     font-family: 'Noto Sans JP', 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, 'MS Ｐゴシック', 'MS PGothic', sans-serif;
-    font-size: 1.7vh;
+    font-size: 1.6vh;
 }
 
 .wrapper {
@@ -23,7 +23,13 @@
 .container {
     max-width: 1000px;
     margin: 0 auto;
-    padding: 0 2%;
+    padding: 0 4%;
+}
+
+.inner{
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 4%;
 }
 
 p,
@@ -32,10 +38,10 @@ li {
 }
 
 .page-top-margin {
-    margin-top: 100px;
+    margin-top: 200px;
 
     @include sp {
-        margin-top: 16vh;
+        margin-top: clamp(50px, 16vw, 16vh);
     }
 }
 
