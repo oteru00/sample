@@ -99,6 +99,33 @@ header {
     background-color: #ffebd9;
 }
 
+.menu {
+    list-style-type: none;
+    position: relative;
+    padding: 0;
+}
+
+.menuSub {
+    position: absolute;
+    margin-left: -6px;
+    padding: 0;
+    display: none;
+    background-color: #ffebd9;
+}
+
+.menuSub li a {
+    padding: 5px;
+    margin-left: -5px;
+    margin-right: -5px;
+    margin-bottom: -5px;
+    display: block;
+    color: #333;
+    text-decoration: none;
+}
+
+.menuSub li a:hover {
+    background: #FFCA7B;
+}
 
 
 @include sp {

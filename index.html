@@ -8,9 +8,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@3.0.2/destyle.css">
     <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
     <link rel="stylesheet" href="css/index.css">
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <script src="js/main.js" defer></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
 </head>
 
 <body>
@@ -23,9 +21,20 @@
             </h1>
             <nav class="header-nav">
                 <ul class="header-nav-list">
-                    <li><a href="index.html">TOP</a></li>
+                    <li class="select-page"><a href="index.html">TOP</a></li>
                     <li><a href="reason-pege.html">選ばれる理由</a></li>
-                    <li><a href="service-pege.html">サービスメニュー</a></li>
+                    <li class="slideDown">
+                        <a href="service-pege.html">サービスメニュー</a>
+                        <ul class="menuSub">
+                            <li><a href="single-marketing.html">SNS運用</a></li>
+                            <li><a href="single-consultiong.html">SNSコンサル</a></li>
+                            <li><a href="single-influencer.html">インフルエンサーマーケティング</a></li>
+                            <li><a href="single-advertisement.html">WEB広告/SNS広告</a></li>
+                            <li><a href="single-branding.html">ブランディング</a></li>
+                            <li><a href="single-creation.html">ホームページ制作</a></li>
+                            <li><a href="service-pege.html#othermenu">その他メニュー</a></li>
+                        </ul>
+                    </li>
                     <li><a href="works-pege.html">制作事例</a></li>
                     <li><a href="magazine-page.html">マガジン</a></li>
                     <li><a href="information-pege.html">会社概要</a></li>
@@ -33,21 +42,21 @@
                 </ul>
                 <ul class="contact-list">
                     <li class="contact-list-item">
-                        <a href="#" class="contact-btn">
+                        <a href="mailto:info@snsmarkcom.site" class="contact-btn">
                             <h4 class="contact-list-title">メールでお問い合わせ</h4>
                             <p>24時間受付中</p>
                             <img src="img/cont_mail_icon.png" alt="メール">
                         </a>
                     </li>
                     <li class="contact-list-item">
-                        <a href="#" class="contact-btn">
+                        <a href="https://lin.ee/EkuJu77" class="contact-btn">
                             <h4 class="contact-list-title">オンラインで相談</h4>
                             <p>LINEにて対応</p>
                             <img src="img/cont_online_icon.png" alt="パソコン">
                         </a>
                     </li>
                     <li class="contact-list-item">
-                        <a href="#" class="contact-btn">
+                        <a href="document.html" class="contact-btn">
                             <h4 class="contact-list-title">料金表<br>お役立ち資料</h4>
                             <img src="img/cont_download_icon.png" alt="ダウンロード">
                         </a>
@@ -74,29 +83,35 @@
         <section id="achievements">
             <h2 class="sec-title">支援実績</h2>
             <ul class="slider">
-                <li class="sulid-item"></li>
-                <li class="slide-item"></li>
-                <li class="slide-item"></li>
-                <li class="slide-item"></li>
-                <li class="slide-item"></li>
-                <li class="slide-item"></li>
-                <li class="slide-item"></li>
-                <li class="slide-item"></li>
-                <li class="slide-item"></li>
-                <li class="slide-item"></li>
+                <li class="slide-item"><img src="img/client01.svg" alt="finetoday"></li>
+                <li class="slide-item"><img src="img/client02.png" alt="IRISOHYAMA"></li>
+                <li class="slide-item"><img src="img/client03.svg" alt="Alpen"></li>
+                <li class="slide-item"><img src="img/client04.png" alt="CAPCOM"></li>
+                <li class="slide-item"><img src="img/client01.svg" alt="finetoday"></li>
+                <li class="slide-item"><img src="img/client02.png" alt="IRISOHYAMA"></li>
+                <li class="slide-item"><img src="img/client03.svg" alt="Alpen"></li>
+                <li class="slide-item"><img src="img/client04.png" alt="CAPCOM"></li>
+                <li class="slide-item"><img src="img/client01.svg" alt="finetoday"></li>
+                <li class="slide-item"><img src="img/client02.png" alt="IRISOHYAMA"></li>
+                <li class="slide-item"><img src="img/client03.svg" alt="Alpen"></li>
+                <li class="slide-item"><img src="img/client04.png" alt="CAPCOM"></li>
             </ul>
         </section>
         <section id="about">
             <div class="about-content-area wrapper">
                 <div class="about-content-left">
                     <h2 class="sec-title">ABOUT</h2>
-                    <p class="sub-title">
-                        SNS集客に特化した
-                        <br>SNS運用代行サービス
-                        <br>企画→制作→運用→分析まで丸投げOK！
-                    </p>
-                    <p>「SNS運用に時間が取れずお困りではありませんか？当サービスでは、企画・制作・運用・分析を一括でサポート！</p>
-                    <p>プロが効果的なSNS集客を実現し、貴社のビジネス成長を支援します。忙しい日々の中でも、効率的にSNSを活用したい方に最適なサービスです。まずはお気軽にご相談ください！」</p>
+                    <div class="sub-title">
+                        <p>SNS集客に特化したSNS運用</p>
+                        <p>一切手間のかからない最強ブランディング</p>
+                        <p>業界トップクラスの確かな実績</p>
+                    </div>
+                    <div class="about-comment">
+                        <p>データ分析と市場洞察を活用し、的確なマーケティング戦略を立案します。企画から分析までを一括してお任せいただける体制を整え、WEB制作や動画制作など幅広いサービスを一貫して提供します。
+                        </p>
+                        <p>これまで累計150社以上の支援実績があり、総売上支援額は10億円を突破。さらに、最短6ヶ月でインスタグラムのフォロワーを1万人以上獲得した実績もございます。マーケティングに関するあらゆるニーズに対応し、成果につながるプロモーションを実現します。
+                        </p>
+                    </div>
                 </div>
                 <div class="about-content-right"></div>
             </div>
@@ -109,11 +124,28 @@
                     <h2 class="sec-title">REASONS TO BE CHOSEN</h2>
                     <h3 class="sec-title-ja">選ばれる理由</h3>
                     <ol class="reason-list">
-                        <li><span>01</span>SNS集客特化の運用</li>
-                        <li><span>02</span>一切手間がかからない</li>
-                        <li><span>03</span>業界トップクラスの確かな実績</li>
-                        <li><span>04</span>良さを最大限に引き出すサービス力</li>
-                        <li><span>05</span>信用と誠実さ</li>
+                        <li>
+                            <span>01</span>
+                            <p>SNS集客特化の運用</p>
+                            <p>データ分析と市場洞察に基づき、的確なマーケティング戦略を立案します。</p>
+                        </li>
+                        <li><span>02</span>
+                            <p>一切手間がかからないブランディング</p>
+                            <p>企画から分析まで丸投げOK！</p>
+                        </li>
+                        <li><span>03</span>
+                            <p>業界トップクラスの確かな実績</p>
+                            <p>累計150社以上、総売上支援10億円以上！！</p>
+                        </li>
+                        <li>
+                            <span>04</span>
+                            <p>良さを最大限に引き出すサービス力</p>
+                            <p>サービスの特徴や強みを徹底的に分析し、その魅力を正確に伝えるコンテンツ作成に努めます。</p>
+                        </li>
+                        <li><span>05</span>
+                            <p>信用と誠実さ</p>
+                            <p>『信用できるから任せよう！』そう言っていただける会社を目指しています。</p>
+                        </li>
                     </ol>
                     <a href="reason-pege.html" class="more-btn">もっと見る</a>
                 </div>
@@ -126,40 +158,40 @@
                 <div class="service-content">
                     <ul class="service-list">
                         <li class="marketing">
-                            <h4 class="service-list-title">SNS運用<br>マーケティング</h4>
-                            <img src="img/istockphoto-2164277876-2048x2048.jpg" alt="マーケティング">
+                            <h4 class="service-list-title">SNS運用</h4>
+                            <img src="img/srevice01.jpg" alt="マーケティング">
                             <p>戦略的なSNS運用で効果につながる、SNSマーケティングを行います。</p>
                             <a href="single-marketing.html" class="more-btn">もっと見る</a>
                         </li>
                         <li class="consulting">
                             <h4 class="service-list-title">SNSコンサル</h4>
-                            <img src="img/コンサルティング.jpg" alt="コンサルティング">
+                            <img src="img/srevice02.jpg" alt="コンサルティング">
                             <p>この時代を生き残る企業や商品の価値を向上させるブランディングを行います。</p>
                             <a href="single-consultiong.html" class="more-btn">もっと見る</a>
                         </li>
+                        <li class="influencer">
+                            <h4 class="service-list-title">インフルエンサー<br>マーケティング</h4>
+                            <img src="img/srevice03.jpg" alt="撮影している人">
+                            <p>インフルエンサーを活用して、自社商品やサービスの認知拡大、購買促進を行います。</p>
+                            <a href="single-influencer.html" class="more-btn">もっと見る</a>
+                        </li>
                         <li class="advertisement">
                             <h4 class="service-list-title">WEB広告<br>SNS広告</h4>
-                            <img src="img/広告.jpg" alt="携帯の画面">
+                            <img src="img/srevice04.jpg" alt="携帯の画面">
                             <p>強みを明確にしたプランニングで収益につながる広告戦略・運用を提供します。</p>
                             <a href="single-advertisement.html" class="more-btn">もっと見る</a>
                         </li>
-                        <li class="creation">
-                            <h4 class="service-list-title">ホームページ制作</h4>
-                            <img src="img/WEB広告.jpg" alt="PC画面">
-                            <p>集客に特化した効果の上がるホームページを制作・運営を行います。</p>
-                            <a href="single-creation.html" class="more-btn">もっと見る</a>
-                        </li>
                         <li class="branding">
                             <h4 class="service-list-title">ブランディング</h4>
-                            <img src="img/ブランディング.jpg" alt="封筒">
+                            <img src="img/srevice05.jpg" alt="封筒">
                             <p>貴社の目的に合わせたデジタルを活用した集客する仕組みを作ります。</p>
                             <a href="single-branding.html" class="more-btn">もっと見る</a>
                         </li>
-                        <li class="influencer">
-                            <h4 class="service-list-title">インフルエンサー<br>マーケティング</h4>
-                            <img src="img/インフルエンサー.jpg" alt="撮影している人">
-                            <p>インフルエンサーを活用して、自社商品やサービスの認知拡大、購買促進を行います。</p>
-                            <a href="single-influencer.html" class="more-btn">もっと見る</a>
+                        <li class="creation">
+                            <h4 class="service-list-title">ホームページ制作</h4>
+                            <img src="img/srevice06.jpg" alt="PC画面">
+                            <p>集客に特化した効果の上がるホームページを制作・運営を行います。</p>
+                            <a href="single-creation.html" class="more-btn">もっと見る</a>
                         </li>
                     </ul>
                 </div>
@@ -172,23 +204,23 @@
                 <ul class="othermenu-list">
                     <li>
                         <h4 class="othermenu-list-title">パンフレット作成</h4>
-                        <img src="img/パンフレット.png" alt="パンフレットイラスト" class="lllust">
+                        <img src="img/other-menu-lllst01.png" alt="パンフレットイラスト" class="lllust">
                     </li>
                     <li>
                         <h4 class="othermenu-list-title">メール<br>マーケティング</h4>
-                        <img src="img/メールマーケティング.png" alt="メールイラスト" class="lllust">
+                        <img src="img/other-menu-lllst02.png" alt="メールイラスト" class="lllust">
                     </li>
                     <li>
                         <h4 class="othermenu-list-title">ブログ<br>マーケティング</h4>
-                        <img src="img/ブログマーケティング.png" alt="鉛筆イラスト" class="lllust">
+                        <img src="img/other-menu-lllst03.png" alt="鉛筆イラスト" class="lllust">
                     </li>
                     <li>
-                        <h4 class="othermenu-list-title">VRショールーム</h4>
-                        <img src="img/VRショールーム.png" alt="360°イラスト" class="lllust">
+                        <h4 class="othermenu-list-title">演技指導</h4>
+                        <img src="img/other-menu-lllst04.png" alt="演技指導" class="lllust">
                     </li>
                     <li>
                         <h4 class="othermenu-list-title">写真撮影/動画制作</h4>
-                        <img src="img/写真撮影.png" alt="カメライラスト" class="lllust">
+                        <img src="img/other-menu-lllst05.png" alt="カメライラスト" class="lllust">
                     </li>
                 </ul>
                 <a href="service-pege.html#othermenu" class="more-btn">もっと見る</a>
@@ -229,16 +261,16 @@
                 <h3 class="sec-title-ja">お取引き実績</h3>
                 <ul class="client-list-logo">
                     <li>
-                        <div class="img-area"></div>
+                        <img src="img/client01.svg" alt="ファイントゥデイ">
                     </li>
                     <li>
-                        <div class="img-area"></div>
+                        <img src="img/client02.png" alt="アイリスオーヤマ">
                     </li>
                     <li>
-                        <div class="img-area"></div>
+                        <img src="img/client03.svg" alt="アルペン">
                     </li>
                     <li>
-                        <div class="img-area"></div>
+                        <img src="img/client04.png" alt="カプコン">
                     </li>
                 </ul>
                 <div class="client-list-area">
@@ -299,21 +331,21 @@
                 <h3 class="sec-title-ja">お問い合わせ</h3>
                 <ul class="contact-list">
                     <li class="contact-list-item">
-                        <a href="#" class="contact-btn">
+                        <a href="mailto:info@snsmarkcom.site" class="contact-btn">
                             <h4 class="contact-list-title">メールでお問い合わせ</h4>
                             <p>24時間受付中</p>
                             <img src="img/cont_mail_icon.png" alt="メール">
                         </a>
                     </li>
                     <li class="contact-list-item">
-                        <a href="#" class="contact-btn">
+                        <a href="https://lin.ee/EkuJu77" class="contact-btn">
                             <h4 class="contact-list-title">オンラインで相談</h4>
                             <p>LINEにて対応</p>
                             <img src="img/cont_online_icon.png" alt="パソコン">
                         </a>
                     </li>
                     <li class="contact-list-item">
-                        <a href="#" class="contact-btn">
+                        <a href="document.html" class="contact-btn">
                             <h4 class="contact-list-title">料金表<br>お役立ち資料</h4>
                             <img src="img/cont_download_icon.png" alt="ダウンロード">
                         </a>
@@ -339,23 +371,24 @@
             <div class="footer-nav">
                 <ul class="footer-nav-list01">
                     <li><a href="index.html">TOP</a></li>
-                    <li><a href="service-pege.html">選ばれる理由</a></li>
+                    <li><a href="reason-pege.html">選ばれる理由</a></li>
                     <li><a href="works-pege.html">制作事例</a></li>
                 </ul>
                 <ul class="footer-nav-list02">
                     <li><a href="service-pege.html">サービスメニュー</a></li>
-                    <li><a href="#">SNS運用/マーケティング</a></li>
-                    <li><a href="#">WEB広告/SNS広告</a></li>
-                    <li><a href="#">ホームページ制作</a></li>
-                    <li><a href="#">ブランディング</a></li>
-                    <li><a href="#">写真撮影/動画撮影</a></li>
-                    <li><a href="#">インフルエンサーマーケティング</a></li>
+                    <li><a href="single-marketing.html">SNS運用</a></li>
+                    <li><a href="single-consultiong.html">SNSコンサル</a></li>
+                    <li><a href="single-influencer.html">インフルエンサーマーケティング</a></li>
+                    <li><a href="single-advertisement.html">WEB広告/SNS広告</a></li>
+                    <li><a href="single-branding.html">ブランディング</a></li>
+                    <li><a href="single-creation.html">ホームページ制作</a></li>
+                    <li><a href="service-pege.html#othermenu">その他メニュー</a></li>
                 </ul>
                 <ul class="footer-nav-list03">
                     <li><a href="magazine-page.html">マガジン</a></li>
                     <li><a href="information-pege.html">会社案内</a></li>
                     <li><a href="faq-pege.html">FAQ</a></li>
-                    <li><a href="#">お問い合わせ</a></li>
+                    <li><a href="contact.html">お問い合わせ</a></li>
                 </ul>
             </div>
         </div>
@@ -364,11 +397,6 @@
                 <li>
                     <a href="https://www.instagram.com/snsmark.com.official">
                         <img src="img/icons8-インスタグラム-50.png" alt="インスタグラム">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://x.com/snsmarkcom">
-                        <img src="img/icons8-ツイッターx-50.png" alt="X">
                     </a>
                 </li>
                 <li>
@@ -387,7 +415,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="https://lit.link/snsmarkcom">
+                    <a href="mailto:info@snsmarkcom.site">
                         <img src="img/icons8-郵便物-50.png" alt="メール">
                     </a>
                 </li>
@@ -397,15 +425,23 @@
     </footer>
     <div class="right-fixed-nav">
         <div class="cont01">
-            <a href="#">お問い合わせ</a>
+            <a href="contact.html">お問い合わせ</a>
         </div>
         <div class="cont02">
-            <a href="#">料金表・お役立ち資料</a>
+            <a href="document.html">料金表・お役立ち資料</a>
         </div>
         <div class="cont03">
-            <a href="#">はじめての方へ</a>
+            <a href="faq-pege.html">はじめての方へ</a>
         </div>
     </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="js/main.js"></script>
+
+
 </body>
 
 </html>
